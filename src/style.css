@@ -1,0 +1,46 @@
+body {
+  font-family: "Roboto";
+}
+.container {
+  margin: 50px;
+}
+
+.weather-app-card {
+  display: block;
+  max-width: 500px;
+  border: solid 1px blue;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.btn-primary {
+  padding: 10px;
+  background: pink;
+  color: red;
+  border: 2px solid black;
+}
+
+.btn-primary:hover {
+  color: white;
+  background: red;
+  border: 2px solid black;
+}
+
+small {
+  margin: 100px;
+  text-align: center;
+}
+
+.form-control {
+  margin-bottom: 20px;
+  padding: 10px;
+}
