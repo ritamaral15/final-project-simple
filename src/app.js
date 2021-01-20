@@ -63,8 +63,8 @@ temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 
 function displayCelsiusTemperature(event) {
 event.preventDefault();
-celsiusLink.classList.add("active");
 fahrenheitLink.classList.remove("active");
+celsiusLink.classList.add("active");
 let temperatureElement = document.querySelector("#temperature");
 temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
@@ -77,4 +77,3 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Lisbon");
 
-console.log(Response)
