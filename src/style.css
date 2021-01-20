@@ -12,7 +12,9 @@ body {
 
 .weather-app-card {
   display: block;
-  background-image: url("/src/image-background.jpg");
+  background-image: url("image-background.jpg");
+  background-position: center;
+  min-height: 1000px;
   max-width: 700px;
   border: solid 1px #1fd7e0;
   border-radius: 15px;
@@ -60,11 +62,6 @@ small {
 #temperature {
   color: #1fd7e0;
   font-size: 40px;
-}
-
-li {
-  padding: none;
-  text-decoration: none;
 }
 
 .weather-icon {

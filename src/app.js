@@ -11,10 +11,7 @@ function formatDate (timestamp) {
     let days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 let day = days[date.getDay()];
 return `${day}, ${hours}:${minutes}`;
-
-
 }
-
 
 function displayTemperature (response) {
 let temperatureElement = document.querySelector("#temperature");
@@ -35,7 +32,7 @@ temperatureElement.innerHTML = Math.round(celsiusTemperature);
   windElement.innerHTML = Math.round(response.data.wind.speed);
 dateElement.innerHTML = formatDate(response.data.dt * 1000);
 iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`);
-iconElement.setAttribute("alt", response.data.weather[0].description)
+iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function search(city) {
@@ -79,3 +76,5 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Lisbon");
+
+console.log(Response)
