@@ -36,7 +36,7 @@ iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function search(city) {
-let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=7a70d3b7b9ef2868a29c2eda310cd96b&units=metric`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=7a70d3b7b9ef2868a29c2eda310cd96b&units=metric`;
 axios.get(apiUrl).then(displayTemperature);
 }
 
